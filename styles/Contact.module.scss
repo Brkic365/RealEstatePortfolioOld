@@ -3,7 +3,10 @@
   width: 100%;
   color: #e4e4e4;
   text-align: center;
-  background-color: #2a2a2a;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../public/images/indoor_pool.jpg");
+  background-size: cover;
+  background-position: 0% 80%;
 
   h2 {
     margin-bottom: 1.5rem;

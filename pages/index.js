@@ -97,7 +97,9 @@ export default function Home() {
         <h1 className={styles.outline}>WORK?</h1>
         <p>{"Get in touch with me and I will start working instantly."}</p>
         <Zoom triggerOnce>
-          <button>{"LET'S WORK!"}</button>
+          <Link href="/contact">
+            <button>{"LET'S WORK!"}</button>
+          </Link>
         </Zoom>
       </div>
     </div>
