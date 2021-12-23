@@ -1,0 +1,13 @@
+.title {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  height: 2rem;
+
+  h2 {
+    top: 0;
+    left: 100%;
+    position: absolute;
+    width: max-content;
+  }
+}

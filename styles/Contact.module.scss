@@ -1,0 +1,214 @@
+.contact {
+  padding: 2rem 1rem;
+  width: 100%;
+  color: #e4e4e4;
+  text-align: center;
+  background-color: #2a2a2a;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #e4e4e4;
+    font-size: 1.7rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    color: #e4e4e4;
+    transition: 0.2s ease-in-out;
+    border: 2px solid #867874 !important;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #867874;
+    }
+
+    &:active {
+      border: 2px solid #e4e4e4 !important;
+      background-color: transparent;
+    }
+  }
+
+  form {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+    .group {
+      width: 100%;
+
+      .one,
+      .two {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    .budgetGroup {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      width: 90%;
+
+      .one {
+        label,
+        input,
+        select {
+          margin-right: auto;
+          width: 80%;
+        }
+      }
+
+      .two {
+        label,
+        input,
+        select {
+          width: 115%;
+          margin-right: 15%;
+        }
+      }
+    }
+
+    input,
+    textarea,
+    select {
+      width: 90%;
+    }
+
+    label {
+      margin-bottom: 0.8rem;
+    }
+
+    input,
+    textarea,
+    select {
+      margin-bottom: 0.8rem;
+      border: none;
+      outline: none;
+      font-size: 0.95rem;
+      padding: 0.5rem;
+      color: #272727;
+      resize: none;
+      background-color: #e4e4e4;
+    }
+  }
+
+  .confirmed {
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #e4e4e4;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 533px) {
+  .contact {
+    h2 {
+      font-size: 2rem;
+    }
+
+    .confirmed {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    form {
+      width: 90%;
+      margin: 1rem auto;
+
+      button {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+      }
+
+      input,
+      textarea,
+      select {
+        font-size: 1rem;
+      }
+
+      .group {
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        width: 90%;
+
+        .one {
+          label,
+          input,
+          select {
+            margin-right: auto;
+            width: 95%;
+          }
+        }
+
+        .two {
+          label,
+          input,
+          select {
+            margin-left: auto;
+            width: 95%;
+          }
+
+          select {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contact {
+    form {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .contact {
+    h2 {
+      font-size: 2.5rem !important;
+    }
+
+    form {
+      margin-top: 2rem;
+      input,
+      textarea,
+      select {
+        margin-bottom: 1.3rem;
+        font-size: 1.2rem;
+        padding: 0.8rem;
+      }
+
+      button {
+        padding: 0.9rem 3.5rem;
+      }
+    }
+  }
+}

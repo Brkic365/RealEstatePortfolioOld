@@ -1,0 +1,30 @@
+.project {
+  color: #e4e4e4;
+  position: relative;
+  width: 80%;
+  margin: 2rem auto;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+  }
+
+  .id {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  .name {
+    bottom: 0;
+    left: 0;
+    transform: translate(-5%, 30%);
+  }
+}

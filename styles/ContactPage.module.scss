@@ -1,0 +1,24 @@
+.contact {
+  color: #867874;
+
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 0.8px #867874;
+  }
+
+  .main {
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    .text {
+      text-align: center;
+
+      h1 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
