@@ -3,8 +3,16 @@
   top: 0;
   left: 0;
   padding: 0.5rem;
+  z-index: 5;
 
   .menu {
     cursor: pointer;
+    background-color: #f58f7c;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    margin-left: -0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    width: 3rem;
+    z-index: 5;
   }
 }

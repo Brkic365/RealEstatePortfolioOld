@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Contact.module.scss";
 
-import { useRouter } from "next/router";
-
 export default function Contact({ title }) {
-  const router = useRouter();
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
 

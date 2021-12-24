@@ -2,7 +2,16 @@
   display: flex;
   align-items: center;
   place-content: space-between;
-  width: 60%;
+  width: 75%;
   margin: 0.2rem auto;
-  color: #867874;
+  color: #d6d6d6;
+
+  img {
+    width: 1rem;
+    margin: 0 0.2rem;
+  }
+
+  p {
+    margin: 0 0.2rem;
+  }
 }

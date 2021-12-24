@@ -5,7 +5,8 @@ import styles from "../styles/Home.module.scss";
 import MovingTitle from "../Components/MovingTitle";
 import Project from "../Components/Project";
 
-import { Slide, Zoom } from "react-awesome-reveal";
+import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import TypeAnimation from "react-type-animation";
 
 export default function Home() {
   const projects = [
@@ -42,21 +43,27 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.text}>
           <h1 className={styles.outline}>HELLO, I AM</h1>
-          <h1>ANTONIO</h1>
+          <TypeAnimation
+            cursor={true}
+            sequence={["ANTONIO", 3000, "WEB DEVELOPER", 3000]}
+            wrapper="h1"
+            repeat={Infinity}
+          />
         </div>
         <div className={styles.contact}>
           <Link href="/contact">
-            <div className={styles.button}>
-              <img src="/icons/contactMeRounded.svg" className={styles.text} />
-              <img src="/icons/phone.svg" className={styles.phone} />
-            </div>
+            <Fade triggerOnce>
+              <div className={styles.button}>
+                <img
+                  src="/icons/contactMeRounded.svg"
+                  className={styles.text}
+                />
+                <img src="/icons/phone.svg" className={styles.phone} />
+              </div>
+            </Fade>
           </Link>
-          <p>
-            {
-              "I am a web developer based in Croatia and specialized in professional Real Estate websites"
-            }
-          </p>
         </div>
+        <div className={styles.image}></div>
       </div>
 
       {/* Who Am I Section */}
@@ -64,7 +71,7 @@ export default function Home() {
       <div className={styles.who}>
         <MovingTitle
           text="WHO AM I?"
-          color="#867874"
+          color="#AEA9A5"
           spacing={50}
           speed={0.5}
         />
@@ -83,7 +90,7 @@ export default function Home() {
       {/* My Work Section */}
 
       <div className={styles.work}>
-        <MovingTitle text="MY WORK" color="#e4e4e4" spacing={50} speed={0.5} />
+        <MovingTitle text="MY WORK" color="#2C2B30" spacing={50} speed={0.5} />
         <div className={styles.container}>
           {projects.map((project) => (
             <Project project={project} key={project.id} />

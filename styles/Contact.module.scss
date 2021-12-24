@@ -26,15 +26,15 @@
     padding: 0.8rem 2rem;
     color: #e4e4e4;
     transition: 0.2s ease-in-out;
-    border: 2px solid #867874 !important;
+    border: 2px solid #d6d6d6 !important;
     background-color: transparent;
 
     &:hover {
-      background-color: #867874;
+      background-color: #d6d6d6;
     }
 
     &:active {
-      border: 2px solid #e4e4e4 !important;
+      border: 2px solid #2c2b30 !important;
       background-color: transparent;
     }
   }
@@ -117,7 +117,7 @@
     p {
       text-align: center;
       font-size: 1.1rem;
-      color: #e4e4e4;
+      color: #2c2b30;
     }
 
     button {
